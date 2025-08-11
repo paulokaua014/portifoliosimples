@@ -32,7 +32,7 @@ body{
 }
 .cabecalho-menu-link{
     font-family: var(--fonteprimaria);
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 600;
     color:var(--corterceira);
     text-decoration: none;
@@ -42,21 +42,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
     display: flex;
     flex-direction: column;
     gap: 40px ;
-    width: 615px;
+    width: 50%;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family:var(--fontesegudaria);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonteprimaria);
 }
 .button{
@@ -70,7 +71,7 @@ body{
 .apresentacao__linksubtitulo{
     font-family: var(--fontesegudaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao-links-link{
@@ -78,10 +79,10 @@ body{
     align-items: center;
     gap: 16px;
     border: 2px solid var(--corterceira);
-    width: 378px;
+    width: 50%;
     color:var(--corsegundaria);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     padding: 21.5px 0;
     text-decoration: none;
@@ -95,8 +96,7 @@ body{
 
 .fotoperfil{
     border-radius: 50px;
-    height: 488px;
-    width: 550px;
+    width: 50%;
 }
 .rodape{
     background-color: var(--corterceira);
@@ -104,7 +104,23 @@ body{
     padding: 24px;
     text-align: center;
     font-family: var(--fonteprimaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
   
+}
+
+@media (max-width:1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction:column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width:auto;
+    }
 }
